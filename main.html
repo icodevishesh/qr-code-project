@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+     *{
+        
+        font-family: outfit;
+        
+     }
+     body{
+        background-image: url("images/bg1.jpg");
+     }
+        
+     main{
+            margin: auto;
+            padding: auto;
+            display: flex;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:hsl(212, 45%, 89%) ;
+            width: 1000px;
+            height: 470px;
+            margin: auto;
+            margin-top: 100px;
+            box-shadow: 10px 30px 34px 3px rgb(27, 36, 71);
+        }
+        .box{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: azure;
+            height: 300px;
+            width: 195px;
+            border-radius: .8rem;
+        }
+        @media screen and (max-width: 600px){
+            h1{
+                font-size: 36px;
+                line-height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <div class="container">
+        <div class="box">
+            <div class="img" style="height: 290px; width: auto; margin-top: 10px;"><img src="images/image-qr-code.png" style="height: 165px; width: 170px; border-radius: .8rem;"></div>
+            <div class="heading" style="height: 53px; width: auto; text-align: center; margin-right: 20px; margin-left: 20px; "><h style="font-weight:bold; font-size: 14px;">Improve your front-end skils by building projects</h></div>
+            <div class="info" style="height: 100px; width: auto; text-align: center; margin-bottom: 20px; margin-left:10px; margin-right: 10px;"><p style="font-size:10px; font-weight:700; color: hsl(0, 0%, 49%);">Scan the QR code to visit Frontend mentor and take your coding skils to the next level</p></div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
